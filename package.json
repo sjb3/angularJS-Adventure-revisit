@@ -1,0 +1,20 @@
+{
+  "name": "angularJS-Adventure-revisit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjb3/angularJS-Adventure-revisit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjb3/angularJS-Adventure-revisit/issues"
+  },
+  "homepage": "https://github.com/sjb3/angularJS-Adventure-revisit#readme"
+}
