@@ -9,14 +9,21 @@ ngAdventure.component('gamePad', {
   controllerAs: 'gamePadCtrl'
 });
 
-ngAdventure.controller('GamePadController', ['$log', 'playerService', GamePadController]);
+ngAdventure.controller('GamePadController', ['$log',  'playerService', GamePadController]);
 
 function GamePadController($log, playerService) {
-  $log.debug('GamePadController')
+  $log.debug('GamePadController');
 
-  this.direction = 'north', 'south', 'east', 'west';
+  this.directions = ['north', 'south', 'east', 'west'];
   this.moveDirection = this.directions[0];
-  this.movePLayer = function() {
-    playerService.molvePLayer(this.moveDirection)
-  }
-}
+
+  this.movePlayer = function() {
+    playerService.movePlayer(this.moveDirection)
+    .then( location => {
+      $log.log(`player currently at: ${location}`);
+    })
+    .catch( err => {
+      $log.error(err);
+    });
+  };
+};

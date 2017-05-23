@@ -16,7 +16,7 @@ module.exports = {
         }),
         new ExtractTextPlugin('bundle.css')
         ],
-    module: 
+    module: {
         rules: [
         {
             test: /\.js$/,

@@ -9,11 +9,11 @@ ngAdventure.component('gameHistory', {
     controllerAs: 'gameHistoryCtrl'
 });
 
-ngAdventure.controller('GameHistoryController', ['$log', 'playerService', GameHistoryController]); 
+ngAdventure.controller('GameHistoryController', ['$log', 'playerService', GameHistoryController]);
 
 function GameHistoryController($log, playerService) {
     $log.debug('GameHistoryController');
 
     this.history = playerService.history;
-
+};
 

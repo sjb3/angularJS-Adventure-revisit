@@ -1,3 +1,3 @@
 # angularJS-Adventure-revisit
 
-Webpack 2.x
+Webpack migrated to 2.x
